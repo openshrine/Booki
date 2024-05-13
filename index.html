@@ -21,10 +21,10 @@
                     <img src="images/logo/Booki.png" rel="Le logo Booki">
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li><a href="">Hébergements</a></li>
-                        <li><a href="">Activités</a></li>
-                    </ul> 
+                    
+                        <span id="hebergements"><a href="">Hébergements</a></span>
+                        <span id="activites"></span><a href="">Activités</a></span>
+                    
                 </div>
         </header>
 
@@ -34,11 +34,27 @@
                     Trouvez votre hébergement pour des vacances de rêve
                 </h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <form method="get" action="">
-                    <input class="lieu" type="text" name="localisation" id="localisation" placeholder="Marseille, France" size="30" maxlength="20">
+                <div class="form">
+                <span id="locationlogo"><i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i></span>
+                <span><form method="get" action=""></span>
+                    <input class="lieu" type="text" name="localisation" id="localisation" placeholder="Marseille, France" size="25" maxlength="20">
                     <input class="rechercher" type="submit" value="Rechercher">
                 </form>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+                <div id="filtersection">
+                    <span id="filtertitle">Filtres</span>
+                    <div id="myBtnContainer">
+                    <button class="btn" onclick="filterSelection('all')"> Economique</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Familial</button>
+                    <button class="btn" onclick="filterSelection('animals')"> Romantique</button>
+                    <button class="btn" onclick="filterSelection('fruits')"> Nos pépites</button>
+                    </div>
+                </div>
+
+                <div id="info-section">
+                    <span id="i"><i class="fa-solid fa-info" style="color: #0065fc;"></i></span>
+                    <span>Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
