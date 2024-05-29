@@ -467,7 +467,7 @@ a {
 
     .populaires {
         width: 100%;
-        max-height: 30%;
+        height: 45%;
         margin-top: 20px;
     }
 
@@ -495,12 +495,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
 
-    body {
-        width: 100%;
-    }
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -508,14 +503,6 @@ a {
         position: relative;
         margin: auto;
     }
-
-    /*.menu {
-       display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-        border-bottom: #D9D9D9 solid 1px;
-        padding-bottom: 15px;
-    }*/
 
     .menu {
         display: flex;
@@ -526,16 +513,15 @@ a {
     
     #hebergements-link:hover {
         border-top: none;
-        border-bottom-style: solid;
+        border-bottom-style: solid 2px;
         border-bottom-color: #0065FC;
-        border-bottom-width: 100%;
         color: #0065FC;
         padding-bottom: 15px;
     }
 
     #activites-link:hover {
         border-top: none;
-        border-bottom-style: solid;
+        border-bottom-style: solid 2px;
         border-bottom-color: #0065FC;
         color: #0065FC;
         padding-bottom: 15px;
