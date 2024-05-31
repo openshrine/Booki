@@ -24,6 +24,8 @@ ul {
     padding: none;
 }
 
+/**** Header *****/
+
 .logo {
     position: absolute;
     padding-top: 10px;
@@ -65,7 +67,6 @@ ul {
     border-top-style: solid;
     border-top-color: #0065FC ;
     color: #0065FC;
-    width: fit-content;
 }
 
 #activites-link:hover {
@@ -73,7 +74,6 @@ ul {
     border-top-style: solid;
     border-top-color: #0065FC ;
     color: #0065FC;
-    width: fit-content;
 }
 
 #locationlogo {
@@ -124,6 +124,7 @@ ul {
     padding-bottom: 10.5px;
     padding-left: 10.5px;
     padding-right: 10.5px;
+    cursor: pointer;
 }
 
 .form {
@@ -131,13 +132,13 @@ ul {
     flex-direction: row;
     margin-top: 40px;
 }
+
 #filtersection {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    
-    
+    margin-top: 40px; 
 }
+
 #filtertitle {
     font-weight: bold;
     margin-right: 20px;
@@ -153,13 +154,15 @@ ul {
     background-color: white;
     color: black;
     font-weight: bold;
+    font-size: smaller;
     padding: 14px 14px 15px 17px;
     margin-right: 10px;
     
 }
 
-.filterbutton:hover, .btn:hover {
+.filterbutton:hover {
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .btn {
@@ -230,10 +233,6 @@ ul {
     justify-content: space-between;
 }
 
-/*.hebergements-and-populaires section {
-    
-}*/
-
 /****** Hebergements ***********/
 
 .hebergements {
@@ -290,8 +289,8 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     box-sizing: content-box;
-    margin-top: -50px;
-    margin-bottom: -40px;
+    margin-top: auto;
+    
 }
 
 .hebergements-cards-container .card-title {
@@ -394,7 +393,7 @@ ul {
     padding-top: 20px;
 }
 #activites .card-activites {
-    width: 300px;
+    /*width: 300px;*/
     height: 450px;
 }
 
@@ -430,7 +429,7 @@ ul {
 .activites-title {
     padding: 10px;
     padding-left: 30px;
-    
+    margin-top: auto;
 }
 
 
@@ -457,6 +456,13 @@ a {
     font-size: 22px;
 }
 
+.card-title {
+    font-size: 14PX;
+}
+
+.card-subtitle {
+    font-size: smaller;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -466,6 +472,7 @@ a {
 
     body {
         width: 100%;
+        margin: 5px;
     }
 
     .main-container {
@@ -542,9 +549,10 @@ a {
     
     #hebergements-link:hover {
         border-top: none;
-        border-bottom: solid 2px  #0065FC;
-        color: #0065FC;;
+        border-bottom: solid 2px #0065FC;
+        color: #0065FC;
         padding-bottom: 15px;
+        
     }
 
     #activites-link:hover {
@@ -661,6 +669,9 @@ a {
     height: 50%;
    }
 
+   #activites .card-activites {
+    width: 300px
+   }
 
    footer {
     display: grid;
