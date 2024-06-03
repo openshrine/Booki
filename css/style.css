@@ -467,6 +467,13 @@ a {
 
 /****** Media queries ***********/
 
+/* Large devices less/equal 1440px) */
+@media (max-width: 1440px) {
+    body {
+        margin: 5px;
+    }
+    
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
